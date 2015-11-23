@@ -9,5 +9,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && rm -rf /tmp
 
 ADD ./sync.sh /sync.sh
+RUN chmod +x /sync.sh
 
-ENTRYPOINT ["/sync.sh"]
+#ENTRYPOINT ["/sync.sh"]
