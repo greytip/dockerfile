@@ -11,4 +11,4 @@ RUN apt-get update && \
 ADD ./sync.sh /sync.sh
 RUN chmod +x /sync.sh
 
-#ENTRYPOINT ["/sync.sh"]
+ENTRYPOINT ["/sync.sh"]
