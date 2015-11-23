@@ -10,6 +10,4 @@ RUN apt-get update && \
 
 ADD ./sync.sh /sync.sh
 
-#ENTRYPOINT ["aws"]
-
-
+ENTRYPOINT ["/sync.sh"]
